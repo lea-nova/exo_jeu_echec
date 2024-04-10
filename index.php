@@ -38,10 +38,11 @@ for ($i = 0; $i < $nbPieces; $i++) {
         $piecesEchec[] = new Cavalier(rand(1, 8), rand(1, 8));
     }
 
+
     echo "test: " . $test;
 }
 
 foreach ($piecesEchec as $value) {
     $j[] = $value;
-    echo  "<br>" . count($j) . " : " . $value . "<br>";
+    echo "<br>" . $value->peutAllerA(5, 5) . " " . count($j) . " : " . $value . "<br>";
 }

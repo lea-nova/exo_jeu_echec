@@ -22,7 +22,7 @@ class Fou extends PieceEchecs
 
     public function peutAllerA()
     {
-        $peutYAller = "";
-        return $peutYAller;
+        $peutAller = true;
+        return $peutAller;
     }
 }

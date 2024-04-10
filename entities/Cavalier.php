@@ -21,7 +21,15 @@ class Cavalier extends PieceEchecs
 
     public function peutAllerA()
     {
-        $bienPlace = true;
-        return $bienPlace;
+        /*
+Valeur de déplacement pour un Cavalier 
+*/
+        if (($this->x >= -2 && $this->x <= 2) && ($this->y >= -2 && $this->y <= 2)) {
+            $peutAller = "Je peux aller.";
+        } else {
+            $peutAller = "Je ne peux pas";
+        }
+
+        return $peutAller;
     }
 }
